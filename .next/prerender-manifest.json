@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/services/softwareentwicklung":{},"/services/app-development":{},"/services/offline-marketing":{},"/services/webdesigning":{},"/services/digitale-transformation":{}},"dynamicRoutes":{"/services/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/services/[slug]","routeRegex":"^\\/services\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"b99d690333e997b11e985fbe9af0aa7c","previewModeSigningKey":"bfeb7052946df003979ca427397e70066bd18e54770f248f3498b50eda704041","previewModeEncryptionKey":"b3d936fe20a0291d5a566829685771fb48e17d0c43af2ea99b042f94241922ca"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "127302c2dbb0d042d98caae1051a0731",
+    "previewModeSigningKey": "1b86a71cf0f69a9360108107ee0c646fc3fda33be1e1cb7c844187ce303101e7",
+    "previewModeEncryptionKey": "319acab82c4619d211a3d49ae175d0bf095c9411172dfa6e6c59106ca0f30392"
+  }
+}
