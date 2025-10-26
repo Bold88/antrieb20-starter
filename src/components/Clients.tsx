@@ -142,18 +142,19 @@ function ClientsMarquee({
 function LogoTile({ client }: { client: Client }) {
   const content = (
     <div
-      className="h-96 flex items-center"
+      className="h-20 flex items-center"
       title={client.name}
       aria-label={client.name}
     >
       <Image
         src={client.logoSrc}
         alt={client.name}
-        width={1440}
-        height={480}
+        width={240}
+        height={80}
         className={[
-          "h-96 w-auto object-contain",
-          "opacity-80 hover:opacity-100 transition",
+          "h-20 w-auto object-contain",
+          "grayscale hover:grayscale-0 transition-all duration-300",
+          "opacity-70 hover:opacity-100",
           client.className ?? "",
         ].join(" ")}
       />

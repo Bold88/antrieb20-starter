@@ -1,7 +1,9 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import HeroMultiStepTrigger from '@/components/HeroMultiStepTrigger';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './hero-rocket.module.css';
 
 export const metadata = {
@@ -358,6 +360,46 @@ export default function AboutPage() {
                     <div className="font-semibold">Erfahrung & Qualität</div>
                     <div className="text-muted-foreground text-sm">Viele Jahre Projekterfahrung und höchste Qualitätsansprüche – für Ihren Erfolg.</div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 relative overflow-hidden w-full bg-gradient-to-br from-blue-600 to-indigo-700">
+          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div className="max-w-2xl mx-auto text-center text-white">
+              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur rounded-full px-4 py-2 text-sm mb-6">
+                <span className="inline-block w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                Bereit für die digitale Zukunft?
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Lassen Sie uns gemeinsam Ihr Projekt starten!</h2>
+              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
+                Sie haben eine Idee, ein Projekt oder einfach Fragen? Wir freuen uns darauf, 
+                Sie kennenzulernen und gemeinsam die beste Lösung für Ihre Herausforderungen zu entwickeln.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <HeroMultiStepTrigger />
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-blue-700 font-bold py-4 px-10 rounded-xl text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                >
+                  Kontakt aufnehmen
+                </Link>
+              </div>
+              <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-blue-100">
+                <div className="flex items-center gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Kostenlose Beratung</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Unverbindlich & vertraulich</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Antwort in 24h</span>
                 </div>
               </div>
             </div>

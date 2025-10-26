@@ -9,7 +9,7 @@ type FormState = {
   // Einstieg
   intent?: string; // Website erstellen / App entwickeln / Online-Shop / ...
   // Schritt 1
-  need?: "Website" | "Online-Shop" | "Landingpage" | "Sonstiges";
+  need?: "Webseite" | "Online-Shop" | "Landingpage" | "Sonstiges";
   needOther?: string;
   // Schritt 2
   features: string[];
@@ -223,7 +223,7 @@ export default function RequestWizard({
 
             <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
               {[
-                { label: "Website erstellen", sub: "ab 1.500 €" },
+                { label: "Webseite erstellen", sub: "ab 1.500 €" },
                 { label: "App entwickeln", sub: "ab 3.000 €" },
                 { label: "Online-Shop", sub: "in 4 Wochen lieferbar" },
                 { label: "Automatisierung", sub: "Prozessoptimierung" },
@@ -272,7 +272,7 @@ export default function RequestWizard({
             </p>
 
             <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {["Website", "Online-Shop", "Landingpage", "Sonstiges"].map(
+              {["Webseite", "Online-Shop", "Landingpage", "Sonstiges"].map(
                 (label) => (
                   <Chip
                     key={label}

@@ -10,7 +10,7 @@ import { CLIENTS } from "@/data/clients";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import { TESTIMONIALS } from "@/data/testimonials";
-import ContactSection from "@/components/ContactSection";
+import ContactSectionNew from "@/components/ContactSectionNew";
 
 // — Meta-Daten für die Startseite —
 export const metadata: Metadata = {
@@ -101,6 +101,22 @@ export default function HomePage() {
             {/* Multi-Step Lead-Form als Modal-Trigger */}
             <HeroMultiStepTrigger />
 
+            {/* Trust-Signale unter CTA */}
+            <div className="mt-8 flex flex-wrap justify-center items-center gap-6 text-sm text-zinc-600">
+              <div className="flex items-center gap-2">
+                <span className="text-green-600 text-lg">✓</span>
+                <span>Über 50 zufriedene Kunden</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-600 text-lg">✓</span>
+                <span>Kostenlose Erstberatung</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-green-600 text-lg">✓</span>
+                <span>Antwort in 24h</span>
+              </div>
+            </div>
+
             {/* KPIs */}
             <div className="mt-10">
               <Stats />
@@ -110,7 +126,7 @@ export default function HomePage() {
 
         {/* Kunden/Partner */}
         <section className="bg-transparent">
-          <Clients clients={CLIENTS} variant="marquee" speed={30} />
+          <Clients clients={CLIENTS} variant="grid" columns={5} />
         </section>
 
         {/* Leistungen */}
@@ -257,7 +273,7 @@ export default function HomePage() {
 
         {/* Kontakt */}
         <section className="bg-transparent">
-          <ContactSection />
+          <ContactSectionNew />
         </section>
 
         {/* JSON-LD */}

@@ -45,7 +45,7 @@ export default function Hero() {
             <ul className="mt-6 space-y-2 text-zinc-700">
               {[
                 "Go-to-Market in Wochen statt Monaten",
-                "Maßgeschneiderte Software & Websites",
+                "Maßgeschneiderte Software & Webseiten",
                 "Data-driven E-Commerce & Apps",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3">

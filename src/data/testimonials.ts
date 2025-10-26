@@ -20,7 +20,7 @@ export const TESTIMONIALS: Testimonial[] = [
     href: "https://www.Minilernkreis.de",
     rating: 5,
     quote:
-      "Mit der von Antrieb2.0 entwickelten Multi-Tenancy-Software konnten wir unsere gesamte Verwaltung digitalisieren und zentralisieren. Website und Marketing wurden ebenfalls perfekt auf unsere Bedürfnisse zugeschnitten – das erleichtert unseren Alltag enorm.",
+      "Mit der von Antrieb2.0 entwickelten Multi-Tenancy-Software konnten wir unsere gesamte Verwaltung digitalisieren und zentralisieren. Webseite und Marketing wurden ebenfalls perfekt auf unsere Bedürfnisse zugeschnitten – das erleichtert unseren Alltag enorm.",
   },
   {
     company: "Verwaltungssoftware",

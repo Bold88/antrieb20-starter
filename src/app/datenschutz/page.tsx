@@ -108,7 +108,7 @@ export default function DatenschutzPage() {
                 <div>
                   <h3 className="text-xl font-semibold mb-4">Datensicherheit</h3>
                   <div className="space-y-4 text-muted-foreground">
-                    <p>Im Rahmen der Nutzung unserer Website werden Ihre Daten durch technische und organisatorische Maßnahmen geschützt. Wir verwenden Verschlüsselungsverfahren, um Ihre Daten bei der Übertragung zu schützen.</p>
+                    <p>Im Rahmen der Nutzung unserer Webseite werden Ihre Daten durch technische und organisatorische Maßnahmen geschützt. Wir verwenden Verschlüsselungsverfahren, um Ihre Daten bei der Übertragung zu schützen.</p>
                     <p>Unsere Mitarbeiter werden regelmäßig im Umgang mit personenbezogenen Daten geschult und sind zur Einhaltung der Datenschutzbestimmungen verpflichtet.</p>
                   </div>
                 </div>

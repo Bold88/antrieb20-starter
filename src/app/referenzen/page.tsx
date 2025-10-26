@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import Clients from "@/components/Clients";
+import { CLIENTS } from "@/data/clients";
 
 export const metadata: Metadata = {
   title: "Referenzen | Antrieb2.0",
@@ -23,47 +24,19 @@ export const metadata: Metadata = {
   },
 };
 
-const LOGOS = [
-  { src: "/images/services/lflogo.png", alt: "lf-logo" },
-  { src: "/images/partners/bba-logo.svg", alt: "bba-logo" },
-  { src: "/images/partners/db-logo.svg", alt: "db-logo" },
-  { src: "/images/partners/dh-logo.svg", alt: "dh-logo" },
-  { src: "/images/partners/evo-logo.svg", alt: "evo-logo" },
-  { src: "/images/partners/jsp-logo.svg", alt: "jsp-logo" },
-  { src: "/images/partners/afs-logo.svg", alt: "afs-logo" },
-  { src: "/images/partners/mlk-logo.svg", alt: "mlk-logo" },
-  { src: "/images/partners/mlk-s-logo.svg", alt: "mlk-s-logo" },
-  { src: "/images/partners/nv-logo.svg", alt: "nv-logo" },
-  { src: "/images/partners/qn-logo.svg", alt: "qn-logo" },
-];
-
 export default function ReferenzenPage() {
   return (
     <>
       <Navbar />
       <div className="bg-background min-h-screen flex flex-col">
-        <section className="py-16 bg-white border-b">
-          <div className="container mx-auto text-center">
-            <div className="text-lg text-primary font-semibold mb-2">
-              Unsere Kunden. Unsere Motivation.
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-10">
-              Vertrauen von starken Marken & Unternehmen
-            </h2>
-            <div className="flex flex-wrap justify-center items-center gap-10">
-              {LOGOS.map((logo) => (
-                <Image
-                  key={logo.alt}
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={120}
-                  height={48}
-                  className="h-12 transition"
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Clients-Section mit der gleichen Komponente wie auf der Startseite */}
+        <Clients
+          title="Vertrauen von starken Marken & Unternehmen"
+          subtitle="Unsere Kunden. Unsere Motivation."
+          clients={CLIENTS}
+          variant="grid"
+          columns={5}
+        />
         <main className="flex-1" id="referenzen-grid">
           {/* Hier können weitere Projekt-Referenzen als Grid ergänzt werden */}
         </main>

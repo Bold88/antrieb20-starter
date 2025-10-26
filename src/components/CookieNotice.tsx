@@ -26,7 +26,7 @@ export default function CookieNotice() {
       <div className="pointer-events-auto bg-white border border-zinc-200 shadow-lg rounded-xl px-6 py-4 max-w-xl w-full flex flex-col md:flex-row items-center gap-4">
         <div className="flex-1 text-sm text-zinc-800">
           <b>Cookies auf Antrieb 2.0</b><br />
-          Wir nutzen Cookies auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern. Weitere Informationen finden Sie in unserer <Link href="/datenschutz" className="text-blue-600 underline">Datenschutzerklärung</Link>.
+          Wir nutzen Cookies auf unserer Webseite. Einige von ihnen sind essenziell, während andere uns helfen, diese Webseite und Ihre Erfahrung zu verbessern. Weitere Informationen finden Sie in unserer <Link href="/datenschutz" className="text-blue-600 underline">Datenschutzerklärung</Link>.
         </div>
         <button
           className="mt-2 md:mt-0 px-5 py-2 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
